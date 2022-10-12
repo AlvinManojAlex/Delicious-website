@@ -1,14 +1,14 @@
 const Form = () => {
   return (
-    <div>
+    <div className="px-4 py-4 mx-auto">
       <form action="">
-        <label htmlFor="FName">First Name : </label>
-        <input type="text" placeholder="Your first name" />
+        <p className="text-gray-900">First Name : </p>
+        <input className="input-box" type="text" placeholder="Your first name" />
         <br />
-        <label htmlFor="LName">Last Name : </label>
-        <input type="text" placeholder="Your last name" />
+        <p className="text-gray-900">Last Name : </p>
+        <input className="input-box" type="text" placeholder="Your last name" />
         <br />
-        <button>Submit</button>
+        <button className="text-white font-bold bg-black my-2 py-1 px-2 w-1/2 relative left-12">Submit</button>
       </form>
     </div>
   );

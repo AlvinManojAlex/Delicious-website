@@ -1,6 +1,5 @@
 import Header from './components/Header';
 import Formcontainer from './components/Formcontainer'
-import Button from './components/Button'
 
 import { useState } from "react";
 
@@ -11,12 +10,12 @@ function App() {
   const [showform, setshowform] = useState(false)
 
   return (
-    <div>
+    <div className="flex flex-row">
       <Header title={title} />
-      <Formcontainer signup={showform} />
-      <Button text={showform ? "Close" : "Sign Up"} onClick={()=>setshowform(!showform)} />
+      <Formcontainer signup={showform} showform={showform} setshowform={setshowform} />
     </div>
   );
 }
 
 export default App;
+
